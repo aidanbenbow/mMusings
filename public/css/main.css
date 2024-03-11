@@ -1,0 +1,12 @@
+@import 'variables.css';
+@import 'header.css';
+@import 'guessWord.css';
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--color-background);
+}
