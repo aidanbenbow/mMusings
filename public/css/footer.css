@@ -1,0 +1,22 @@
+:root{
+    --nav-title-font-size: 3rem;
+    --nav-title-font-weight: bold;
+    --color-text-nav: cornsilk;
+    --color-text-nav2: red;
+    --weight-text-nav: bolder;
+    --header-bgd:   darkblue;
+}
+
+.footer{
+    background: var(--header-bgd);
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer .container{
+    flex-direction: column;
+    color: var(--color-text-nav2);
+}
+.footer .container a{
+    color: var(--color-text-nav);
+}

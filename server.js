@@ -3,6 +3,7 @@ app = express(),
 expressLayouts = require('express-ejs-layouts'),
 indexRouter = require('./routes/index'),
 gamesRouter = require('./routes/games'),
+
 dotenv= require('dotenv').config()
 
 
@@ -14,6 +15,7 @@ app.use(express.static('public'))
 
 app.use('/', indexRouter)
 app.use('/games', gamesRouter)
+
 
 
 app.listen(process.env.PORT || 3000)

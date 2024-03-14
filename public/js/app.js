@@ -12,7 +12,7 @@ dance_animation = 500,
 ranNum = Math.floor(Math.random()*11),
 targetWord = targetwords[ranNum]
 console.log(targetWord)
-console.log(ranNum)
+
 
 function start(){
 document.addEventListener('click', mouseClick)

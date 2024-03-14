@@ -9,4 +9,12 @@ router.get('/guessWord', (req,res)=>{
     res.render('games/guessWord')
 })
 
+router.get('/WordGuess', (req,res)=>{
+    res.render('games/wordGuess')
+})
+
+router.get('/animals', (req,res)=>{
+    res.render('games/animals')
+})
+
 module.exports = router
