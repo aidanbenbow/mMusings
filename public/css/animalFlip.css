@@ -1,0 +1,54 @@
+.cardscontainer{
+    
+    width: 400px;
+    height: 400px;
+    list-style: none;
+    display: flex;   
+    flex-wrap: wrap;
+   perspective: 800px;
+}
+
+.thecard{
+    position: relative;
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    margin: 2px;
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.thecard:active{
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+.thecard.flip{
+    transform: rotateY(180deg);
+}
+
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: aliceblue;
+    color: purple;
+    font-size: 40px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: aliceblue;
+    color: purple;
+  
+    transform: rotateY(180deg);
+}
