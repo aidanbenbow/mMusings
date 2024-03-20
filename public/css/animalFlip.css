@@ -1,7 +1,36 @@
+.animals-container{
+    display: grid;
+    
+}
+
+
+.flips{
+    background-color: red;
+    font-size: 2em;
+}
+
+.game-info{
+    width: 600px;
+    display: flex;
+    align-items: flex-start;
+    
+    margin: 20px;
+    flex-direction: row;
+    gap: 5px;
+    background-color: blue;
+}
+
+.instructions{
+    background-color: wheat;
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+
 .cardscontainer{
     
     width: 400px;
-    height: 400px;
+    height: 600px;
     list-style: none;
     display: flex;   
     flex-wrap: wrap;
@@ -18,6 +47,7 @@
     margin: 2px;
     transform: scale(1);
     transition: transform .5s;
+    cursor: pointer;
 }
 
 .thecard:active{
@@ -29,7 +59,7 @@
     transform: rotateY(180deg);
 }
 
-.thefront{
+.thefront, .theback{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -43,12 +73,6 @@
 }
 
 .theback{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background-color: aliceblue;
-    color: purple;
   
     transform: rotateY(180deg);
 }

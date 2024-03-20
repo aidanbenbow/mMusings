@@ -1,13 +1,31 @@
-const cards = document.querySelectorAll('.thecard')
+const cards = document.querySelectorAll('.thecard'),
+flips = document.querySelector('#flips')
+
+console.log(flips)
 
 let hasFlipped = false,
 lockBoard = false,
 firstCard, secondCard
 
+class memAudio{
+    constructor(){
+        this.flip = new Audio('../sounds/flip.wav')
+        this.num = 2
+        
+    }
+    flip(){
+        this.flip.play()
+    }
+}
+
+const gameAudio = new memAudio()
+//console.log(gameAudio.flip())
+
+
 function flipCard(){
     if(lockBoard) return
 if(this === firstCard) return
-
+flips.textContent++
     this.classList.add('flip')
 
     if(!hasFlipped){

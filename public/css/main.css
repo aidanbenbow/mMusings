@@ -6,6 +6,7 @@
 @import 'creation.css';
 @import 'animal.css';
 @import 'animalFlip.css';
+@import 'gettingToKnowYou.css';
 
 *, *::after, *::before{
     box-sizing: border-box;
