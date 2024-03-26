@@ -9,16 +9,7 @@
     font-size: 2em;
 }
 
-.game-info{
-    width: 600px;
-    display: flex;
-    align-items: flex-start;
-    
-    margin: 20px;
-    flex-direction: row;
-    gap: 5px;
-    background-color: blue;
-}
+
 
 .instructions{
     background-color: wheat;
